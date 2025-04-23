@@ -1,0 +1,350 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables de couleurs */
+:root {
+    --background-color: #111212;
+    --text-color: #eceeE6;
+    --text-color-muted: rgba(236, 238, 230, 0.7);
+    --card-background: rgba(236, 238, 230, 0.1);
+    --card-border: rgba(236, 238, 230, 0.5);
+    --service-bg: #323434;
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.section-container {
+    max-width: 1648px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    background-color: rgba(17, 18, 18, 0.8);
+    padding: 40px 80px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1728px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 86px;
+    height: 42px;
+    background-color: var(--text-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 64px;
+}
+
+nav li {
+    font-size: 16px;
+}
+
+.cta-button-container {
+    position: relative;
+    display: inline-block;
+    padding: 1.5px;
+}
+
+.button-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    display: block;
+}
+
+.cta-button {
+    position: relative;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    z-index: 1;
+    
+    background: 
+        linear-gradient(to bottom, 
+            rgba(236, 238, 230, 0) 0%, 
+            rgba(236, 238, 230, 0.05) 40%, 
+            rgba(236, 238, 230, 0.1) 100%),
+        linear-gradient(to bottom, 
+            rgba(236, 238, 230, 0) 0%, 
+            rgba(236, 238, 230, 0.01) 53%, 
+            rgba(236, 238, 230, 0.03) 79%,
+            rgba(236, 238, 230, 0.05) 100%),
+        rgba(20, 20, 20, 0.15);
+}
+
+.cta-button a {
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    min-height: 553px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 50%;
+    padding: 80px;
+    z-index: 2;
+}
+
+.hero-text {
+    max-width: 784px;
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.hero-text p {
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.hero-background {
+    position: absolute;
+    top: -825px;
+    right: 0;
+    width: 50%;
+    height: 2203px;
+    background-color: rgba(236, 238, 230, 0.15);
+    border-radius: 500px;
+    z-index: 1;
+}
+
+/* Clients section */
+.clients {
+    padding: 64px 48px;
+}
+
+.clients-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 48px;
+}
+
+.client-logo {
+    color: var(--text-color);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.client-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+}
+
+/* Projects section */
+.projects {
+    padding: 40px 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: linear-gradient(to right, rgba(236, 238, 230, 0.1), rgba(236, 238, 230, 0.05), rgba(236, 238, 230, 0));
+    border: 1px solid;
+    border-image: linear-gradient(to right, rgba(236, 238, 230, 0.5), rgba(236, 238, 230, 0.2), rgba(236, 238, 230, 0)) 1;
+    border-radius: 12px;
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    backdrop-filter: blur(56px);
+}
+
+.project-image {
+    width: 100%;
+    height: 279px;
+    background-color: var(--service-bg);
+    margin: 8px 0 24px;
+}
+
+.project-card h3 {
+    color: white;
+}
+
+.project-card p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Services section */
+.services {
+    padding: 40px 0;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 104px;
+    margin-top: 40px;
+}
+
+.service-item {
+    display: flex;
+    gap: 0;
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.service-image {
+    width: 496px;
+    height: 279px;
+    background-color: var(--service-bg);
+}
+
+.service-item h3 {
+    color: white;
+    font-size: 24px;
+}
+
+.service-details p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-background {
+        width: 40%;
+    }
+    
+    .service-item {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero-content {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    
+    .hero-background {
+        display: none;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .client-logo, .client-dot {
+        transform: scale(0.8);
+    }
+} 

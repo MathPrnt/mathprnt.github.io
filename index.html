@@ -1,9 +1,133 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathieu Parent | Designer de produit numérique</title>
+    <link rel="stylesheet" href="resources/styles.css">
+</head>
 <body>
-  <h1>Mathieu Parent</h1>
-  <p>Bienvenue sur mon site web</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <!-- SVG définitions (placées en haut du document) -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <linearGradient id="buttonBorder" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:rgb(236, 238, 230);stop-opacity:0.5" />
+                <stop offset="20%" style="stop-color:rgb(236, 238, 230);stop-opacity:0.2" />
+                <stop offset="100%" style="stop-color:rgb(236, 238, 230);stop-opacity:0" />
+            </linearGradient>
+        </defs>
+    </svg>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <!-- Logo sera ajouté ici -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="cta-button-container">
+                <!-- SVG pour la bordure en dégradé -->
+                <svg class="button-border" viewBox="0 0 200 60" preserveAspectRatio="none">
+                    <rect x="0" y="0" width="100%" height="100%" rx="12" ry="12" fill="none" stroke="url(#buttonBorder)" stroke-width="1.5" />
+                </svg>
+                <div class="cta-button">
+                    <a href="#contact">TRAVAILLONS ENSEMBLE</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Mathieu Parent</h1>
+                <h2>Designer de produit numérique</h2>
+                <p>Améliorez l'efficacité, l'adoption et la valeur de votre produit numérique</p>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <section class="clients">
+        <div class="clients-container">
+            <div class="client-logo">Intact</div>
+            <div class="client-dot"></div>
+            <div class="client-logo">Desjardins</div>
+            <div class="client-dot"></div>
+            <div class="client-logo">Accenture</div>
+            <div class="client-dot"></div>
+            <div class="client-logo">Locomotive</div>
+            <div class="client-dot"></div>
+            <div class="client-logo">lg2</div>
+            <div class="client-dot"></div>
+            <div class="client-logo">Turbulent</div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <h2>Quelques projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Titre du projet</h3>
+                    <div class="project-image"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor. Eu malesuada sagittis viverra malesuada aenean ut enim.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Titre du projet</h3>
+                    <div class="project-image"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor. Eu malesuada sagittis viverra malesuada aenean ut enim.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Titre du projet</h3>
+                    <div class="project-image"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor. Eu malesuada sagittis viverra malesuada aenean ut enim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-container">
+            <h2>Les services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-info">
+                        <h3>Stratégie de produit et UX</h3>
+                    </div>
+                    <div class="service-details">
+                        <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.</p>
+                        <div class="service-image"></div>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-info">
+                        <h3>Conception d'interface (UI/UX Design)</h3>
+                    </div>
+                    <div class="service-details">
+                        <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.</p>
+                        <div class="service-image"></div>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-info">
+                        <h3>Systèmes de design</h3>
+                    </div>
+                    <div class="service-details">
+                        <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.</p>
+                        <div class="service-image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
