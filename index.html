@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathieu Parent | Designer de produit numérique</title>
+    <!-- Ajout des polices Google Fonts: Inter et Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/styles.css">
 </head>
 <body>
@@ -15,13 +19,28 @@
                 <stop offset="20%" style="stop-color:rgb(236, 238, 230);stop-opacity:0.2" />
                 <stop offset="100%" style="stop-color:rgb(236, 238, 230);stop-opacity:0" />
             </linearGradient>
+            
+            <!-- Forme de la bordure du bouton CTA avec les coins personnalisés basés sur Figma -->
+            <clipPath id="cta-border-shape">
+                <!-- Path SVG avec coins personnalisés selon le design Figma -->
+                <path d="M16,0 
+                         C7.2,0 0,7.2 0,16 
+                         v68 
+                         C0,92.8 7.2,100 16,100 
+                         h168 
+                         C192.8,100 200,92.8 200,84 
+                         v-68 
+                         C200,7.2 192.8,0 184,0 
+                         h-168 z" />
+            </clipPath>
         </defs>
     </svg>
     
     <header>
         <div class="header-container">
             <div class="logo">
-                <!-- Logo sera ajouté ici -->
+                <!-- Remplacer le placeholder par le logo SVG -->
+                <img src="resources/logo.svg" alt="Mathieu Parent Logo" width="86" height="42">
             </div>
             <nav>
                 <ul>
@@ -32,10 +51,6 @@
                 </ul>
             </nav>
             <div class="cta-button-container">
-                <!-- SVG pour la bordure en dégradé -->
-                <svg class="button-border" viewBox="0 0 200 60" preserveAspectRatio="none">
-                    <rect x="0" y="0" width="100%" height="100%" rx="12" ry="12" fill="none" stroke="url(#buttonBorder)" stroke-width="1.5" />
-                </svg>
                 <div class="cta-button">
                     <a href="#contact">TRAVAILLONS ENSEMBLE</a>
                 </div>
