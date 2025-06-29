@@ -1,11 +1,11 @@
-/* Réinitialisation des styles */
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Variables de couleurs */
+/* Color variables */
 :root {
     --background-color: #111212;
     --background-color-transparent: rgba(17, 18, 18, 0);
@@ -27,7 +27,7 @@
     --button-bg-overlay: rgba(20, 20, 20, 0.15);
 }
 
-/* Styles généraux */
+/* General styles */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--background-color);
@@ -36,12 +36,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.2;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: medium;
     margin-bottom: 16px;
 }
 
@@ -198,30 +200,45 @@ nav li {
 /* Hero section */
 .hero {
     position: relative;
-    min-height: 553px;
+    height: calc(100vh - var(--header-height, 0px) - var(--clients-height, 0px));
+    min-height: 320px;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     overflow: hidden;
 }
 
 .hero-content {
-    width: 50%;
+    height: 100%;
+    display: flex;
+    width: 100%;
     padding: 80px;
     z-index: 2;
 }
 
 .hero-text {
-    max-width: 784px;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hero-text h1 {
+    margin-bottom: 0;
 }
 
 .hero-text h2 {
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 24px;
     margin-bottom: 32px;
+    font-weight: 200;
 }
 
 .hero-text p {
     font-size: 32px;
-    line-height: 1.3;
+    line-height: 40px;
+    margin-top: auto;
+    font-weight: medium;
 }
 
 .hero-background {
@@ -237,29 +254,63 @@ nav li {
 
 /* Clients section */
 .clients {
-    padding: 64px 48px;
+    padding: 32px 0;
+    overflow: hidden; /* Empêcher le débordement */
 }
 
 .clients-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* Aligner à gauche pour l'animation */
     flex-wrap: nowrap;
-    overflow-x: auto;
+    height: 100px;
     gap: 48px;
+    width: 100%;
 }
 
 .client-logo {
-    color: var(--text-color);
-    font-weight: 500;
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 120px; /* Taille uniforme */
+    height: 60px; /* Hauteur uniforme */
+}
+
+.client-logo img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    filter: brightness(0) invert(1); /* Rendre les logos blancs */
+    transition: opacity 0.3s ease;
+    object-fit: contain; /* Garder les proportions */
 }
 
 .client-dot {
-    width: 24px;
-    height: 24px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: var(--text-color);
+    flex-shrink: 0;
+}
+
+.clients-marquee {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    animation: marquee 25s linear infinite;
+    white-space: nowrap;
+    will-change: transform; /* Optimiser les performances d'animation */
+    transform: translateZ(0); /* Forcer l'accélération matérielle */
+}
+  
+@keyframes marquee {
+    0% {
+        transform: translateX(0) translateZ(0);
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0);
+    }
 }
 
 /* Projects section */

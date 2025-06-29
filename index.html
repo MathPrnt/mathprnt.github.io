@@ -4,43 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mathieu Parent | Designer de produit numérique</title>
-    <!-- Ajout des polices Google Fonts: Inter et Poppins -->
+    <!-- Add Google Fonts: Inter and Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/styles.css">
 </head>
 <body>
-    <!-- SVG définitions (placées en haut du document) -->
-    <svg width="0" height="0" style="position: absolute;">
-        <defs>
-            <linearGradient id="buttonBorder" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" style="stop-color:rgb(236, 238, 230);stop-opacity:0.5" />
-                <stop offset="20%" style="stop-color:rgb(236, 238, 230);stop-opacity:0.2" />
-                <stop offset="100%" style="stop-color:rgb(236, 238, 230);stop-opacity:0" />
-            </linearGradient>
-            
-            <!-- Forme de la bordure du bouton CTA avec les coins personnalisés basés sur Figma -->
-            <clipPath id="cta-border-shape">
-                <!-- Path SVG avec coins personnalisés selon le design Figma -->
-                <path d="M16,0 
-                         C7.2,0 0,7.2 0,16 
-                         v68 
-                         C0,92.8 7.2,100 16,100 
-                         h168 
-                         C192.8,100 200,92.8 200,84 
-                         v-68 
-                         C200,7.2 192.8,0 184,0 
-                         h-168 z" />
-            </clipPath>
-        </defs>
-    </svg>
-    
     <header>
         <div class="header-container">
             <div class="logo">
-                <!-- Remplacer le placeholder par le logo SVG -->
-                <img src="resources/logo.svg" alt="Mathieu Parent Logo" width="86" height="42">
+                <img src="resources/visual_assets/logo.svg" alt="Mathieu Parent Logo" width="86" height="42">
             </div>
             <nav>
                 <ul>
@@ -71,17 +45,74 @@
 
     <section class="clients">
         <div class="clients-container">
-            <div class="client-logo">Intact</div>
-            <div class="client-dot"></div>
-            <div class="client-logo">Desjardins</div>
-            <div class="client-dot"></div>
-            <div class="client-logo">Accenture</div>
-            <div class="client-dot"></div>
-            <div class="client-logo">Locomotive</div>
-            <div class="client-dot"></div>
-            <div class="client-logo">lg2</div>
-            <div class="client-dot"></div>
-            <div class="client-logo">Turbulent</div>
+            <div class="clients-marquee">
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Intact.svg" alt="Intact" width="80" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Desjardins.svg" alt="Desjardins" width="120" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Accenture.svg" alt="Accenture" width="100" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Locomotive.svg" alt="Locomotive" width="100" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/lg2.svg" alt="lg2" width="60" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Turbulent.svg" alt="Turbulent" width="100" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/MTM.design.svg" alt="MTM.Design" width="100" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Métamusique.svg" alt="Métamusique" width="120" height="40">
+                </div>
+                <div class="client-dot"></div>
+                
+                <!-- Duplication parfaite pour une animation fluide -->
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Intact.svg" alt="Intact" width="80" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Desjardins.svg" alt="Desjardins" width="120" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Accenture.svg" alt="Accenture" width="100" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Locomotive.svg" alt="Locomotive" width="100" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/lg2.svg" alt="lg2" width="60" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Turbulent.svg" alt="Turbulent" width="100" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/MTM.design.svg" alt="MTM.Design" width="100" height="40">
+                </div>
+                <div class="client-dot"></div>
+                <div class="client-logo">
+                    <img src="resources/visual_assets/Métamusique.svg" alt="Métamusique" width="120" height="40">
+                </div>
+                <div class="client-dot"></div>
+            </div>
         </div>
     </section>
 
@@ -144,5 +175,6 @@
             </div>
         </div>
     </section>
+    <script src="resources/scripts.js"></script>
 </body>
 </html>
