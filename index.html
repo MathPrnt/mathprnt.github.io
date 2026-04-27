@@ -6,25 +6,83 @@
   <title>Mathieu Parent — Design de produit numérique</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=Outfit:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="sidebar">
-    <div class="sidebar__header">
-      <img class="sidebar__logo" src="assets/logo.svg" alt="Mathieu Parent" />
-      <p class="sidebar__tagline">design de produit numérique</p>
-    </div>
+  <div class="layout">
 
-    <div class="sidebar__body">
-      <ul class="sidebar__nav">
-        <li><a href="#projets" class="sidebar__link">Projets</a></li>
-        <li><a href="#services" class="sidebar__link">Services</a></li>
-        <li><a href="#about" class="sidebar__link">About</a></li>
-      </ul>
+    <nav class="sidebar">
+      <div class="sidebar__header">
+        <img class="sidebar__logo" src="assets/logo.svg" alt="Mathieu Parent" />
+        <p class="sidebar__tagline">design de produit numérique</p>
+      </div>
 
-      <a href="#contact" class="sidebar__cta">Travaillons ensemble</a>
-    </div>
-  </nav>
+      <div class="sidebar__body">
+        <ul class="sidebar__nav">
+          <li><a href="#projets" class="sidebar__link">Projets</a></li>
+          <li><a href="#services" class="sidebar__link">Services</a></li>
+          <li><a href="#about" class="sidebar__link">About</a></li>
+        </ul>
+
+        <a href="#contact" class="sidebar__cta">Travaillons ensemble</a>
+      </div>
+    </nav>
+
+    <main class="main">
+
+      <section class="header" id="header">
+        <div class="header__content">
+          <p class="header__hero">
+            Améliorez l'efficacité, l'adoption et la valeur de votre produit numérique
+          </p>
+        </div>
+        <div class="marquee-wrapper">
+          <div class="marquee-track">
+            <!-- First copy -->
+            <div class="marquee-set">
+              <img class="marquee-logo" src="assets/intact.svg"     alt="Intact"       style="width:133px;height:57px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/desjardins.svg" alt="Desjardins"   style="width:248px;height:54px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/accenture.svg"  alt="Accenture"    style="width:188px;height:48px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/locomotive.svg" alt="Locomotive"   style="width:317px;height:34px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/lg2.svg"        alt="lg2"          style="width:65px;height:48px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/turbulent.svg"  alt="Turbulent"    style="width:266px;height:27px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/mtm-design.svg" alt="MTM.design"   style="width:348px;height:39px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/metamusique.svg" alt="Métamusique" style="width:318px;height:49px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-set" aria-hidden="true">
+              <img class="marquee-logo" src="assets/intact.svg"     alt=""             style="width:133px;height:57px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/desjardins.svg" alt=""             style="width:248px;height:54px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/accenture.svg"  alt=""             style="width:188px;height:48px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/locomotive.svg" alt=""             style="width:317px;height:34px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/lg2.svg"        alt=""             style="width:65px;height:48px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/turbulent.svg"  alt=""             style="width:266px;height:27px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/mtm-design.svg" alt=""             style="width:348px;height:39px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+              <img class="marquee-logo" src="assets/metamusique.svg" alt=""            style="width:318px;height:49px" />
+              <img class="marquee-dot"  src="assets/dot.svg"        alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
 </body>
 </html>
