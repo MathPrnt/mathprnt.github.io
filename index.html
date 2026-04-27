@@ -1,180 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mathieu Parent | Designer de produit numérique</title>
-    <!-- Add Google Fonts: Inter and Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="resources/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathieu Parent — Design de produit numérique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=Outfit:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="resources/visual_assets/logo.svg" alt="Mathieu Parent Logo" width="86" height="42">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-            <div class="cta-button-container">
-                <div class="cta-button">
-                    <a href="#contact">TRAVAILLONS ENSEMBLE</a>
-                </div>
-            </div>
-        </div>
-    </header>
+  <nav class="sidebar">
+    <div class="sidebar__header">
+      <img class="sidebar__logo" src="assets/logo.svg" alt="Mathieu Parent" />
+      <p class="sidebar__tagline">design de produit numérique</p>
+    </div>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Mathieu Parent</h1>
-                <h2>Designer de produit numérique</h2>
-                <p>Améliorez l'efficacité, l'adoption et la valeur de votre produit numérique</p>
-            </div>
-        </div>
-        <div class="hero-background"></div>
-    </section>
+    <div class="sidebar__body">
+      <ul class="sidebar__nav">
+        <li><a href="#projets" class="sidebar__link">Projets</a></li>
+        <li><a href="#services" class="sidebar__link">Services</a></li>
+        <li><a href="#about" class="sidebar__link">About</a></li>
+      </ul>
 
-    <section class="clients">
-        <div class="clients-container">
-            <div class="clients-marquee">
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Intact.svg" alt="Intact" width="80" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Desjardins.svg" alt="Desjardins" width="120" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Accenture.svg" alt="Accenture" width="100" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Locomotive.svg" alt="Locomotive" width="100" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/lg2.svg" alt="lg2" width="60" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Turbulent.svg" alt="Turbulent" width="100" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/MTM.design.svg" alt="MTM.Design" width="100" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Métamusique.svg" alt="Métamusique" width="120" height="40">
-                </div>
-                <div class="client-dot"></div>
-                
-                <!-- Duplication parfaite pour une animation fluide -->
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Intact.svg" alt="Intact" width="80" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Desjardins.svg" alt="Desjardins" width="120" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Accenture.svg" alt="Accenture" width="100" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Locomotive.svg" alt="Locomotive" width="100" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/lg2.svg" alt="lg2" width="60" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Turbulent.svg" alt="Turbulent" width="100" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/MTM.design.svg" alt="MTM.Design" width="100" height="40">
-                </div>
-                <div class="client-dot"></div>
-                <div class="client-logo">
-                    <img src="resources/visual_assets/Métamusique.svg" alt="Métamusique" width="120" height="40">
-                </div>
-                <div class="client-dot"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="section-container">
-            <h2>Quelques projets</h2>
-            <div class="projects-grid">
-                <a href="/projet-1" class="project-card">
-                    <h3>Titre du projet</h3>
-                    <div class="project-image"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor. Eu malesuada sagittis viverra malesuada aenean ut enim.</p>
-                </a>
-                <a href="/projet-2" class="project-card">
-                    <h3>Titre du projet</h3>
-                    <div class="project-image"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor. Eu malesuada sagittis viverra malesuada aenean ut enim.</p>
-                </a>
-                <a href="/projet-3" class="project-card">
-                    <h3>Titre du projet</h3>
-                    <div class="project-image"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor. Eu malesuada sagittis viverra malesuada aenean ut enim.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="section-container">
-            <h2>Les services</h2>
-            <div class="services-list">
-                <div class="service-item">
-                    <div class="service-info">
-                        <h3>Stratégie de produit et UX</h3>
-                    </div>
-                    <div class="service-details">
-                        <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.</p>
-                        <div class="service-image"></div>
-                    </div>
-                </div>
-                
-                <div class="service-item">
-                    <div class="service-info">
-                        <h3>Conception d'interface (UI/UX Design)</h3>
-                    </div>
-                    <div class="service-details">
-                        <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.</p>
-                        <div class="service-image"></div>
-                    </div>
-                </div>
-                
-                <div class="service-item">
-                    <div class="service-info">
-                        <h3>Systèmes de design</h3>
-                    </div>
-                    <div class="service-details">
-                        <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.</p>
-                        <div class="service-image"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="resources/scripts.js"></script>
+      <a href="#contact" class="sidebar__cta">Travaillons ensemble</a>
+    </div>
+  </nav>
 </body>
 </html>

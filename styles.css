@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark: #211e20;
+  --light: #e9efec;
+  --shadow: #a0a08b;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--dark);
+  font-family: 'Outfit', sans-serif;
+}
+
+/* ── Sidebar ── */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 48px;
+  background: var(--dark);
+  height: 100%;
+  width: 280px;
+}
+
+/* ── Header (logo + tagline) ── */
+
+.sidebar__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+
+.sidebar__logo {
+  width: 104px;
+  height: 50px;
+  display: block;
+  --fill-0: var(--light);
+}
+
+.sidebar__tagline {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.14px;
+  text-transform: uppercase;
+  color: var(--light);
+}
+
+/* ── Body (nav + cta) ── */
+
+.sidebar__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  flex: 1;
+  padding-bottom: 74px;
+}
+
+/* ── Nav links ── */
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar__link {
+  display: block;
+  padding: 8px 0;
+  width: 100%;
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  font-variation-settings: 'SOFT' 0, 'WONK' 1;
+  color: var(--light);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.sidebar__link:hover {
+  opacity: 0.7;
+}
+
+/* ── CTA button ── */
+
+.sidebar__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background: var(--light);
+  border-radius: 0 20px 20px 0;
+  box-shadow: -4px 4px 0px var(--shadow);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  color: var(--dark);
+  text-decoration: none;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+.sidebar__cta:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 208 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Vector">
+<path d="M0 23C0 10.2975 10.2975 4.37114e-06 23 4.37114e-06C35.7025 4.37114e-06 46 10.2975 46 23V100H0V23Z" fill="var(--fill-0, #E9EFEC)"/>
+<path d="M185 3.36578e-06C197.703 3.92102e-06 208 10.2975 208 23C208 35.7026 197.703 46 185 46L108 46V0L185 3.36578e-06Z" fill="var(--fill-0, #E9EFEC)"/>
+<path d="M208 100H108V54H185C194.124 54 202.327 50.0571 208 43.7832V100Z" fill="var(--fill-0, #E9EFEC)"/>
+<path d="M54 23C54 10.2975 64.2975 4.37114e-06 77 4.37114e-06C89.7025 4.37114e-06 100 10.2975 100 23V100H54V23Z" fill="var(--fill-0, #E9EFEC)"/>
+</g>
+</svg>
