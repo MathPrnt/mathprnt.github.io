@@ -1,10 +1,10 @@
 (() => {
-  const tiles = document.querySelectorAll('.project-tile');
+  const cards = document.querySelectorAll('.project-card');
   const singles = [...document.querySelectorAll('.reveal')].filter(
-    (el) => !el.closest('.project-tile')
+    (el) => !el.closest('.project-card')
   );
 
-  if (!singles.length && !tiles.length) return;
+  if (!singles.length && !cards.length) return;
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -20,7 +20,7 @@
 
         const target = entry.target;
 
-        if (target.classList.contains('project-tile')) {
+        if (target.classList.contains('project-card')) {
           target.querySelectorAll('.reveal').forEach((el) => {
             el.classList.add('is-visible');
           });
@@ -38,5 +38,5 @@
   );
 
   singles.forEach((el) => observer.observe(el));
-  tiles.forEach((el) => observer.observe(el));
+  cards.forEach((el) => observer.observe(el));
 })();

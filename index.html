@@ -12,227 +12,266 @@
 <body>
   <div class="layout">
 
-    <nav class="sidebar">
-      <div class="sidebar__header">
-        <img class="sidebar__logo" src="assets/logo.svg" alt="Mathieu Parent" />
-        <p class="sidebar__tagline">design de produit numérique</p>
+    <nav class="navigation">
+      <div class="navigation__brand">
+        <img class="logo" src="assets/logo.svg" alt="Mathieu Parent" />
+        <p class="navigation__tagline">design de produit numérique</p>
       </div>
 
-      <div class="sidebar__body">
-        <ul class="sidebar__nav">
-          <li><a href="#projets" class="sidebar__link">Projets</a></li>
-          <li><a href="#services" class="sidebar__link">Services</a></li>
-          <li><a href="#about" class="sidebar__link">À propos</a></li>
+      <div class="navigation__body">
+        <ul class="navigation__links">
+          <li><a href="#projets" class="navigation__link">Projets</a></li>
+          <li><a href="#services" class="navigation__link">Services</a></li>
+          <li><a href="#about" class="navigation__link">À propos</a></li>
         </ul>
 
-        <a href="#contact" class="sidebar__cta">Travaillons ensemble</a>
+        <a href="#contact" class="navigation__button">Travaillons ensemble</a>
       </div>
     </nav>
 
-    <main class="main">
+    <main class="body">
 
       <section class="header" id="header">
-        <div class="header__content">
-          <p class="header__hero reveal" style="--reveal-delay: 160ms">
+        <div class="header__tagline-block">
+          <p class="header__tagline reveal" style="--reveal-delay: 160ms">
             Améliorez l'efficacité, l'adoption et la valeur de votre produit numérique
           </p>
         </div>
-        <div class="marquee-wrapper reveal" style="--reveal-delay: 440ms">
-          <div class="marquee-track">
+        <div class="client-company reveal" style="--reveal-delay: 440ms">
+          <div class="client-company__track">
             <!-- First copy -->
-            <div class="marquee-set">
-              <img class="marquee-logo" src="assets/clients/intact.svg"     alt="Intact"       style="width:133px;height:57px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/desjardins.svg" alt="Desjardins"   style="width:248px;height:54px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/accenture.svg"  alt="Accenture"    style="width:188px;height:48px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/locomotive.svg" alt="Locomotive"   style="width:317px;height:34px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/lg2.svg"        alt="lg2"          style="width:65px;height:48px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/turbulent.svg"  alt="Turbulent"    style="width:266px;height:27px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/mtm-design.svg" alt="MTM.design"   style="width:348px;height:39px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/metamusique.svg" alt="Métamusique" style="width:318px;height:49px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
+            <div class="client-company__set">
+              <img class="client-logo client-logo--intact" src="assets/clients/intact.svg" alt="Intact" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--desjardins" src="assets/clients/desjardins.svg" alt="Desjardins" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--accenture" src="assets/clients/accenture.svg" alt="Accenture" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--locomotive" src="assets/clients/locomotive.svg" alt="Locomotive" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--lg2" src="assets/clients/lg2.svg" alt="lg2" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--turbulent" src="assets/clients/turbulent.svg" alt="Turbulent" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--mtm-design" src="assets/clients/mtm-design.svg" alt="MTM.design" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--metamusique" src="assets/clients/metamusique.svg" alt="Métamusique" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
             </div>
             <!-- Duplicate for seamless loop -->
-            <div class="marquee-set" aria-hidden="true">
-              <img class="marquee-logo" src="assets/clients/intact.svg"     alt=""             style="width:133px;height:57px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/desjardins.svg" alt=""             style="width:248px;height:54px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/accenture.svg"  alt=""             style="width:188px;height:48px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/locomotive.svg" alt=""             style="width:317px;height:34px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/lg2.svg"        alt=""             style="width:65px;height:48px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/turbulent.svg"  alt=""             style="width:266px;height:27px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/mtm-design.svg" alt=""             style="width:348px;height:39px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
-              <img class="marquee-logo" src="assets/clients/metamusique.svg" alt=""            style="width:318px;height:49px" />
-              <img class="marquee-dot"  src="assets/clients/dot.svg"        alt="" />
+            <div class="client-company__set" aria-hidden="true">
+              <img class="client-logo client-logo--intact" src="assets/clients/intact.svg" alt="" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--desjardins" src="assets/clients/desjardins.svg" alt="" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--accenture" src="assets/clients/accenture.svg" alt="" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--locomotive" src="assets/clients/locomotive.svg" alt="" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--lg2" src="assets/clients/lg2.svg" alt="" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--turbulent" src="assets/clients/turbulent.svg" alt="" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--mtm-design" src="assets/clients/mtm-design.svg" alt="" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
+              <img class="client-logo client-logo--metamusique" src="assets/clients/metamusique.svg" alt="" />
+              <img class="client-company__dot" src="assets/clients/dot.svg" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="projects" id="projets">
-        <div class="projects__title">
-          <h2 class="projects__heading reveal">Projets</h2>
-        </div>
-        <div class="projects__listing">
-          <ul class="projects__grid">
-            <li class="project-tile">
-              <div class="project-tile__meta">
-                <div class="project-tile__media reveal" style="--reveal-delay: 0ms" aria-hidden="true"></div>
-                <h3 class="project-tile__title reveal" style="--reveal-delay: 400ms">Titre du projet</h3>
+      <section class="section" id="projets">
+        <h2 class="section__title reveal">Projets</h2>
+        <div class="section__content">
+          <ul class="projects-listing">
+            <li class="project-card">
+              <div class="project-card__media reveal" style="--reveal-delay: 0ms" aria-hidden="true"></div>
+              <div class="project-card__text">
+                <h3 class="project-card__title reveal" style="--reveal-delay: 400ms">Titre du projet</h3>
+                <p class="project-card__description reveal" style="--reveal-delay: 800ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
+                </p>
               </div>
-              <p class="project-tile__description reveal" style="--reveal-delay: 800ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
-              </p>
             </li>
-            <li class="project-tile">
-              <div class="project-tile__meta">
-                <div class="project-tile__media reveal" style="--reveal-delay: 160ms" aria-hidden="true"></div>
-                <h3 class="project-tile__title reveal" style="--reveal-delay: 560ms">Titre du projet</h3>
+            <li class="project-card">
+              <div class="project-card__media reveal" style="--reveal-delay: 160ms" aria-hidden="true"></div>
+              <div class="project-card__text">
+                <h3 class="project-card__title reveal" style="--reveal-delay: 560ms">Titre du projet</h3>
+                <p class="project-card__description reveal" style="--reveal-delay: 960ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor. Eu malesuada sagittis viverra malesuada aenean ut enim.
+                </p>
               </div>
-              <p class="project-tile__description reveal" style="--reveal-delay: 960ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor. Eu malesuada sagittis viverra malesuada aenean ut enim.
-              </p>
             </li>
-            <li class="project-tile">
-              <div class="project-tile__meta">
-                <div class="project-tile__media reveal" style="--reveal-delay: 320ms" aria-hidden="true"></div>
-                <h3 class="project-tile__title reveal" style="--reveal-delay: 720ms">Titre du projet</h3>
+            <li class="project-card">
+              <div class="project-card__media reveal" style="--reveal-delay: 320ms" aria-hidden="true"></div>
+              <div class="project-card__text">
+                <h3 class="project-card__title reveal" style="--reveal-delay: 720ms">Titre du projet</h3>
+                <p class="project-card__description reveal" style="--reveal-delay: 1120ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis.
+                </p>
               </div>
-              <p class="project-tile__description reveal" style="--reveal-delay: 1120ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis.
-              </p>
             </li>
-            <li class="project-tile">
-              <div class="project-tile__meta">
-                <div class="project-tile__media reveal" style="--reveal-delay: 0ms" aria-hidden="true"></div>
-                <h3 class="project-tile__title reveal" style="--reveal-delay: 400ms">Titre du projet</h3>
+            <li class="project-card">
+              <div class="project-card__media reveal" style="--reveal-delay: 0ms" aria-hidden="true"></div>
+              <div class="project-card__text">
+                <h3 class="project-card__title reveal" style="--reveal-delay: 400ms">Titre du projet</h3>
+                <p class="project-card__description reveal" style="--reveal-delay: 800ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis.
+                </p>
               </div>
-              <p class="project-tile__description reveal" style="--reveal-delay: 800ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis.
-              </p>
             </li>
-            <li class="project-tile">
-              <div class="project-tile__meta">
-                <div class="project-tile__media reveal" style="--reveal-delay: 160ms" aria-hidden="true"></div>
-                <h3 class="project-tile__title reveal" style="--reveal-delay: 560ms">Titre du projet</h3>
+            <li class="project-card">
+              <div class="project-card__media reveal" style="--reveal-delay: 160ms" aria-hidden="true"></div>
+              <div class="project-card__text">
+                <h3 class="project-card__title reveal" style="--reveal-delay: 560ms">Titre du projet</h3>
+                <p class="project-card__description reveal" style="--reveal-delay: 960ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis.
+                </p>
               </div>
-              <p class="project-tile__description reveal" style="--reveal-delay: 960ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis.
-              </p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="services" id="services">
-        <div class="services__title">
-          <h2 class="services__heading reveal">Services offerts</h2>
-        </div>
-        <div class="services__listing">
-          <ul class="services__grid">
-            <li class="service-item">
-              <div class="service-item__icon reveal" style="--reveal-delay: 0ms" aria-hidden="true"></div>
-              <h3 class="service-item__title reveal" style="--reveal-delay: 200ms">Titre du service offert</h3>
-              <p class="service-item__description reveal" style="--reveal-delay: 400ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
-              </p>
+      <section class="section" id="services">
+        <h2 class="section__title reveal">Services offerts</h2>
+        <div class="section__content">
+          <ul class="services-listing">
+            <li class="service-card">
+              <div class="service-card__media reveal" style="--reveal-delay: 0ms" aria-hidden="true"></div>
+              <div class="service-card__text">
+                <h3 class="service-card__title reveal" style="--reveal-delay: 200ms">Titre du service offert</h3>
+                <p class="service-card__description reveal" style="--reveal-delay: 400ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
+                </p>
+              </div>
             </li>
-            <li class="service-item">
-              <div class="service-item__icon reveal" style="--reveal-delay: 80ms" aria-hidden="true"></div>
-              <h3 class="service-item__title reveal" style="--reveal-delay: 280ms">Titre du service offert</h3>
-              <p class="service-item__description reveal" style="--reveal-delay: 480ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
-              </p>
+            <li class="service-card">
+              <div class="service-card__media reveal" style="--reveal-delay: 80ms" aria-hidden="true"></div>
+              <div class="service-card__text">
+                <h3 class="service-card__title reveal" style="--reveal-delay: 280ms">Titre du service offert</h3>
+                <p class="service-card__description reveal" style="--reveal-delay: 480ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
+                </p>
+              </div>
             </li>
-            <li class="service-item">
-              <div class="service-item__icon reveal" style="--reveal-delay: 160ms" aria-hidden="true"></div>
-              <h3 class="service-item__title reveal" style="--reveal-delay: 360ms">Titre du service offert</h3>
-              <p class="service-item__description reveal" style="--reveal-delay: 560ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
-              </p>
+            <li class="service-card">
+              <div class="service-card__media reveal" style="--reveal-delay: 160ms" aria-hidden="true"></div>
+              <div class="service-card__text">
+                <h3 class="service-card__title reveal" style="--reveal-delay: 360ms">Titre du service offert</h3>
+                <p class="service-card__description reveal" style="--reveal-delay: 560ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
+                </p>
+              </div>
             </li>
-            <li class="service-item">
-              <div class="service-item__icon reveal" style="--reveal-delay: 240ms" aria-hidden="true"></div>
-              <h3 class="service-item__title reveal" style="--reveal-delay: 440ms">Titre du service offert</h3>
-              <p class="service-item__description reveal" style="--reveal-delay: 640ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
-              </p>
+            <li class="service-card">
+              <div class="service-card__media reveal" style="--reveal-delay: 240ms" aria-hidden="true"></div>
+              <div class="service-card__text">
+                <h3 class="service-card__title reveal" style="--reveal-delay: 440ms">Titre du service offert</h3>
+                <p class="service-card__description reveal" style="--reveal-delay: 640ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
+                </p>
+              </div>
             </li>
-            <li class="service-item">
-              <div class="service-item__icon reveal" style="--reveal-delay: 0ms" aria-hidden="true"></div>
-              <h3 class="service-item__title reveal" style="--reveal-delay: 200ms">Titre du service offert</h3>
-              <p class="service-item__description reveal" style="--reveal-delay: 400ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
-              </p>
+            <li class="service-card">
+              <div class="service-card__media reveal" style="--reveal-delay: 0ms" aria-hidden="true"></div>
+              <div class="service-card__text">
+                <h3 class="service-card__title reveal" style="--reveal-delay: 200ms">Titre du service offert</h3>
+                <p class="service-card__description reveal" style="--reveal-delay: 400ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
+                </p>
+              </div>
             </li>
-            <li class="service-item">
-              <div class="service-item__icon reveal" style="--reveal-delay: 80ms" aria-hidden="true"></div>
-              <h3 class="service-item__title reveal" style="--reveal-delay: 280ms">Titre du service offert</h3>
-              <p class="service-item__description reveal" style="--reveal-delay: 480ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
-              </p>
+            <li class="service-card">
+              <div class="service-card__media reveal" style="--reveal-delay: 80ms" aria-hidden="true"></div>
+              <div class="service-card__text">
+                <h3 class="service-card__title reveal" style="--reveal-delay: 280ms">Titre du service offert</h3>
+                <p class="service-card__description reveal" style="--reveal-delay: 480ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
+                </p>
+              </div>
             </li>
-            <li class="service-item">
-              <div class="service-item__icon reveal" style="--reveal-delay: 160ms" aria-hidden="true"></div>
-              <h3 class="service-item__title reveal" style="--reveal-delay: 360ms">Titre du service offert</h3>
-              <p class="service-item__description reveal" style="--reveal-delay: 560ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
-              </p>
+            <li class="service-card">
+              <div class="service-card__media reveal" style="--reveal-delay: 160ms" aria-hidden="true"></div>
+              <div class="service-card__text">
+                <h3 class="service-card__title reveal" style="--reveal-delay: 360ms">Titre du service offert</h3>
+                <p class="service-card__description reveal" style="--reveal-delay: 560ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
+                </p>
+              </div>
             </li>
-            <li class="service-item">
-              <div class="service-item__icon reveal" style="--reveal-delay: 240ms" aria-hidden="true"></div>
-              <h3 class="service-item__title reveal" style="--reveal-delay: 440ms">Titre du service offert</h3>
-              <p class="service-item__description reveal" style="--reveal-delay: 640ms">
-                Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
-              </p>
+            <li class="service-card">
+              <div class="service-card__media reveal" style="--reveal-delay: 240ms" aria-hidden="true"></div>
+              <div class="service-card__text">
+                <h3 class="service-card__title reveal" style="--reveal-delay: 440ms">Titre du service offert</h3>
+                <p class="service-card__description reveal" style="--reveal-delay: 640ms">
+                  Lorem ipsum dolor sit amet consectetur. Ullamcorper nisl viverra porttitor erat iaculis. Nisl adipiscing tincidunt malesuada ridiculus vel tortor pharetra dis dolor.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="about" id="about">
-        <div class="about__title">
-          <h2 class="about__heading reveal">À propos</h2>
-        </div>
-        <div class="about__content">
-          <div class="about__top">
-            <div class="about__media reveal" style="--reveal-delay: 0ms" aria-hidden="true"></div>
-            <div class="about__text">
-              <h3 class="about__lead reveal" style="--reveal-delay: 160ms">
-                Je conçois des expériences numériques qui génèrent des résultats.
-              </h3>
-              <p class="about__body reveal" style="--reveal-delay: 320ms">
-                Avec 8&nbsp;ans d’expérience en design de produit, j’accompagne des startups et entreprises à transformer leurs idées complexes en interfaces claires, intuitives et engageantes. Mon approche allie recherche utilisateur, stratégie UX et rigueur UI pour livrer des produits qui fonctionnent vraiment.
-              </p>
-              <div class="about__certs">
-                <h3 class="about__certs-heading reveal" style="--reveal-delay: 400ms">Formations &amp; certifications</h3>
-                <ul class="about__certs-grid">
-                  <li class="cert-card reveal" style="--reveal-delay: 480ms" aria-label="Google UX Design Certificate">
-                    <div class="cert-card__media" aria-hidden="true"></div>
+      <section class="section" id="about">
+        <h2 class="section__title reveal">À propos</h2>
+        <div class="section__content">
+          <div class="about-section-content">
+            <div class="top-block">
+              <div class="top-block__intro">
+                <div class="top-block__media reveal" style="--reveal-delay: 0ms" aria-hidden="true"></div>
+                <div class="text-column">
+                  <h3 class="text-column__heading reveal" style="--reveal-delay: 160ms">
+                    Je conçois des expériences numériques qui génèrent des résultats.
+                  </h3>
+                  <p class="text-column__body reveal" style="--reveal-delay: 320ms">
+                    Avec 8&nbsp;ans d’expérience en design de produit, j’accompagne des startups et entreprises à transformer leurs idées complexes en interfaces claires, intuitives et engageantes. Mon approche allie recherche utilisateur, stratégie UX et rigueur UI pour livrer des produits qui fonctionnent vraiment.
+                  </p>
+                </div>
+              </div>
+              <div class="certificates-block">
+                <h3 class="certificates-block__label reveal" style="--reveal-delay: 400ms">Formations &amp; certifications</h3>
+                <ul class="certifications-listing">
+                  <li class="certification reveal" style="--reveal-delay: 480ms" aria-label="Google UX Design Certificate">
+                    <div class="certification__media" aria-hidden="true"></div>
                   </li>
-                  <li class="cert-card reveal" style="--reveal-delay: 560ms" aria-label="Interaction Design Foundation">
-                    <div class="cert-card__media" aria-hidden="true"></div>
+                  <li class="certification reveal" style="--reveal-delay: 560ms" aria-label="Interaction Design Foundation">
+                    <div class="certification__media" aria-hidden="true"></div>
                   </li>
-                  <li class="cert-card reveal" style="--reveal-delay: 640ms" aria-label="Figma Advanced">
-                    <div class="cert-card__media" aria-hidden="true"></div>
+                  <li class="certification reveal" style="--reveal-delay: 640ms" aria-label="Figma Advanced">
+                    <div class="certification__media" aria-hidden="true"></div>
                   </li>
-                  <li class="cert-card reveal" style="--reveal-delay: 720ms" aria-label="Meta Product Design">
-                    <div class="cert-card__media" aria-hidden="true"></div>
+                  <li class="certification reveal" style="--reveal-delay: 720ms" aria-label="Meta Product Design">
+                    <div class="certification__media" aria-hidden="true"></div>
                   </li>
-                  <li class="cert-card reveal" style="--reveal-delay: 800ms" aria-label="NN/g UX Certification">
-                    <div class="cert-card__media" aria-hidden="true"></div>
+                  <li class="certification reveal" style="--reveal-delay: 800ms" aria-label="NN/g UX Certification">
+                    <div class="certification__media" aria-hidden="true"></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="tools-block">
+                <h3 class="tools-block__label reveal" style="--reveal-delay: 880ms">Suite d’outils utilisés</h3>
+                <ul class="tools-listing">
+                  <li class="tool reveal" style="--reveal-delay: 960ms">
+                    <div class="tool__media" aria-hidden="true"></div>
+                    <p class="tool__title">Figma</p>
+                  </li>
+                  <li class="tool reveal" style="--reveal-delay: 1040ms">
+                    <div class="tool__media" aria-hidden="true"></div>
+                    <p class="tool__title">Claude (code, design, etc.)</p>
+                  </li>
+                  <li class="tool reveal" style="--reveal-delay: 1120ms">
+                    <div class="tool__media" aria-hidden="true"></div>
+                    <p class="tool__title">Cursor</p>
+                  </li>
+                  <li class="tool reveal" style="--reveal-delay: 1200ms">
+                    <div class="tool__media" aria-hidden="true"></div>
+                    <p class="tool__title">Adobe suite</p>
+                  </li>
+                  <li class="tool reveal" style="--reveal-delay: 1280ms">
+                    <div class="tool__media" aria-hidden="true"></div>
+                    <p class="tool__title">Affinity</p>
                   </li>
                 </ul>
               </div>
