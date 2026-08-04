@@ -12,13 +12,27 @@
 <body>
   <div class="layout">
 
-    <nav class="navigation">
-      <div class="navigation__brand">
-        <img class="logo" src="assets/logo.svg" alt="Mathieu Parent" />
-        <p class="navigation__tagline">design de produit numérique</p>
+    <nav class="navigation" id="navigation">
+      <div class="navigation__top">
+        <a href="#header" class="navigation__brand" aria-label="Mathieu Parent">
+          <img class="logo logo--desktop" src="assets/logo.svg" alt="" />
+          <img class="logo logo--mobile" src="assets/logo-mobile.svg" alt="" />
+          <p class="navigation__tagline">design d'expériences numériques</p>
+        </a>
+
+        <button
+          class="navigation__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navigation-menu"
+          aria-label="Ouvrir le menu"
+        >
+          <img class="navigation__icon navigation__icon--menu" src="assets/menu.svg" alt="" width="32" height="32" />
+          <img class="navigation__icon navigation__icon--close" src="assets/close.svg" alt="" width="32" height="32" />
+        </button>
       </div>
 
-      <div class="navigation__body">
+      <div class="navigation__body" id="navigation-menu">
         <ul class="navigation__links">
           <li><a href="#projets" class="navigation__link">Projets</a></li>
           <li><a href="#services" class="navigation__link">Services</a></li>
@@ -259,7 +273,7 @@
                   </li>
                   <li class="tool reveal" style="--reveal-delay: 1040ms">
                     <div class="tool__media" aria-hidden="true"></div>
-                    <p class="tool__title">Claude (code, design, etc.)</p>
+                    <p class="tool__title">Claude</p>
                   </li>
                   <li class="tool reveal" style="--reveal-delay: 1120ms">
                     <div class="tool__media" aria-hidden="true"></div>
@@ -280,9 +294,27 @@
         </div>
       </section>
 
+      <footer class="footer">
+        <p class="footer__copyright">© <span data-year></span> Mathieu Parent Design - Version 1.0.0</p>
+        <div class="footer__socials">
+          <a class="footer__social" href="#" aria-label="Instagram">
+            <img src="assets/instagram.svg" alt="" width="32" height="32" />
+          </a>
+          <a class="footer__social" href="#" aria-label="LinkedIn">
+            <img src="assets/linkedin.svg" alt="" width="32" height="32" />
+          </a>
+        </div>
+      </footer>
+
     </main>
 
   </div>
+  <script src="nav.js"></script>
   <script src="reveal.js"></script>
+  <script>
+    document.querySelectorAll('[data-year]').forEach((el) => {
+      el.textContent = new Date().getFullYear();
+    });
+  </script>
 </body>
 </html>
