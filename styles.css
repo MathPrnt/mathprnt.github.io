@@ -502,6 +502,20 @@ body.nav-open {
   overflow: clip;
 }
 
+.project-card__link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card__link:hover .project-card__title {
+  opacity: 0.7;
+}
+
 .project-card__media {
   width: 100%;
   aspect-ratio: 160 / 90;
@@ -910,5 +924,315 @@ body.nav-open {
   .footer__socials {
     flex: none;
     justify-content: flex-start;
+  }
+}
+
+/* ── Navigation — variante projets ── */
+
+.navigation--projects .navigation__button {
+  display: none;
+}
+
+.navigation--projects .navigation__link {
+  text-transform: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.navigation--projects .navigation__link--back {
+  white-space: nowrap;
+}
+
+.navigation__link-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  --fill-0: var(--light);
+}
+
+.navigation--projects .navigation__link[aria-current="page"] {
+  opacity: 0.55;
+}
+
+/* ── Article / projet page ── */
+
+.body--article {
+  align-items: center;
+  gap: 48px;
+  padding: 48px;
+  padding-bottom: 0;
+}
+
+.article-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.article-header__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  max-width: 720px;
+  container-type: inline-size;
+}
+
+.article-header__title {
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 5cqw, 3rem);
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  color: var(--light);
+  overflow-wrap: break-word;
+}
+
+.article-header__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--light);
+}
+
+.article-header__hero {
+  width: 100%;
+  max-width: 900px;
+  max-height: 506.25px;
+  aspect-ratio: 160 / 90;
+  background: var(--mid);
+  border-radius: var(--media-radius);
+}
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 768px;
+  padding: 0 24px;
+}
+
+/* Types de contenu */
+
+.content-heading {
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--light);
+  overflow-wrap: break-word;
+}
+
+.content-text {
+  width: 100%;
+  max-width: 600px;
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--light);
+  font-variation-settings: 'SOFT' 0, 'WONK' 1;
+  overflow-wrap: break-word;
+}
+
+.content-text p + p {
+  margin-top: 16px;
+}
+
+.content-quote {
+  width: 100%;
+  margin: 0;
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--light);
+  font-variation-settings: 'SOFT' 0, 'WONK' 1;
+  overflow-wrap: break-word;
+}
+
+.content-image {
+  width: 100%;
+  aspect-ratio: 160 / 90;
+  background: var(--mid);
+  border-radius: var(--media-radius);
+}
+
+/* ── Media (grille / overflow) ── */
+
+.media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  width: 100%;
+}
+
+.media--landscape.media--overflow {
+  gap: 8px;
+}
+
+.media__grid {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+}
+
+.media--landscape .media__grid {
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(min(100%, 352px), 1fr)
+  );
+}
+
+.media--portrait .media__grid {
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(min(100%, 229px), 1fr)
+  );
+}
+
+.media__item {
+  width: 100%;
+  background: var(--mid);
+  border-radius: var(--media-radius);
+  flex-shrink: 0;
+}
+
+.media--landscape .media__item {
+  aspect-ratio: 160 / 90;
+  min-height: 198px;
+}
+
+.media--portrait .media__item {
+  aspect-ratio: 129 / 229.33;
+  min-height: 0;
+}
+
+.media--overflow .media__track {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+}
+
+.media--overflow .media__track:active,
+.media--overflow .media__track.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
+}
+
+.media--overflow .media__track::-webkit-scrollbar {
+  display: none;
+}
+
+.media--overflow .media__item {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
+
+.media--landscape.media--overflow .media__item {
+  width: calc((100% - 16px) / 2);
+  min-width: min(100%, 280px);
+  min-height: 0;
+}
+
+.media--portrait.media--overflow .media__item {
+  width: calc((100% - 32px) / 3);
+  min-width: min(100%, 180px);
+}
+
+.media__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 272px;
+  max-width: 100%;
+}
+
+.media__bar {
+  position: relative;
+  flex: 1 0 0;
+  min-width: 0;
+  height: 4px;
+  background: var(--mid);
+  overflow: clip;
+}
+
+.media__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: var(--light);
+}
+
+.media__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  --fill-0: var(--light);
+}
+
+.media__btn img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.media__btn:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1079px) {
+  .body--article {
+    padding: 24px;
+    padding-bottom: 0;
+  }
+
+  .article-body {
+    padding: 0;
+  }
+
+  .media--landscape.media--overflow .media__item,
+  .media--portrait.media--overflow .media__item {
+    width: min(100%, 80%);
   }
 }
