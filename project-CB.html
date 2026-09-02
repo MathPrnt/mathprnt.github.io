@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gouvernance de design — Mathieu Parent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+
+    <nav class="navigation navigation--projects" id="navigation">
+      <div class="navigation__top">
+        <a href="index.html" class="navigation__brand" aria-label="Mathieu Parent">
+          <img class="logo logo--desktop" src="assets/logo.svg" alt="" />
+          <img class="logo logo--mobile" src="assets/logo-mobile.svg" alt="" />
+          <p class="navigation__tagline">design d'expériences numériques</p>
+        </a>
+
+        <button
+          class="navigation__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navigation-menu"
+          aria-label="Ouvrir le menu"
+        >
+          <img class="navigation__icon navigation__icon--menu" src="assets/menu.svg" alt="" width="32" height="32" />
+          <img class="navigation__icon navigation__icon--close" src="assets/close.svg" alt="" width="32" height="32" />
+        </button>
+      </div>
+
+      <div class="navigation__body" id="navigation-menu">
+        <ul class="navigation__links">
+          <li>
+            <a href="index.html" class="navigation__link navigation__link--back">
+              <img class="navigation__link-icon" src="assets/arrow-left.svg" alt="" width="24" height="24" />
+              Retour à l'accueil
+            </a>
+          </li>
+          <li><a href="project-CB.html" class="navigation__link" aria-current="page">Gouvernance de design</a></li>
+          <li><a href="#" class="navigation__link">Projet 2</a></li>
+          <li><a href="#" class="navigation__link">Projet 3</a></li>
+          <li><a href="#" class="navigation__link">Projet 4</a></li>
+          <li><a href="#" class="navigation__link">Projet 5</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="body body--article">
+
+      <header class="article-header">
+        <div class="article-header__intro">
+          <h1 class="article-header__title">Gouvernance de design</h1>
+          <div class="article-header__meta">
+            <ul class="article-header__tags">
+              <li>Design system</li>
+              <li>Design operations</li>
+              <li>Design UI</li>
+            </ul>
+            <ul class="article-header__details">
+              <li>Client: Croix Bleue, 2025-2026</li>
+              <li>Rôle: Designer principal, consultation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="article-header__hero" aria-hidden="true"></div>
+      </header>
+
+      <div class="article-body">
+
+        <p class="content-lead">Dans le cadre d'un mandat de gouvernance design pour Croix Bleue, j'ai agi comme designer principal pour mener un projet d'unification de l'expérience numérique multiplateforme. Entre juin 2025 et juin 2026, l'objectif était de structurer et de consolider un design system central capable de soutenir trois environnements, le site web, le Quoter Voyage et l'Espace Client, tout en réduisant la duplication, la dette visuelle et les frictions entre design et développement.</p>
+
+        <h2 class="content-heading">Contexte</h2>
+        <div class="content-container">
+          <div class="content-text">
+            <p>Au départ, chaque plateforme s'appuyait sur un langage visuel développé de façon indépendante, ce qui a entraîné des écarts progressifs et une cohérence d'ensemble difficile à maintenir. Les design systems existants étaient peu adoptés et insuffisamment gouvernés, et plusieurs itérations s'éloignaient de la source en recourant à des composants détachés.</p>
+            <p>Il en résultait une dette visuelle, des frictions dans la collaboration entre design et développement, et une expérience inégale selon les points de contact, un déséquilibre parfois accentué par la coexistence de plusieurs systèmes, dont un hybride avec l'ancienne version du Material Design System.</p>
+          </div>
+        </div>
+
+        <h2 class="content-heading">Objectif</h2>
+        <div class="content-container">
+          <div class="content-text">
+            <p>L'objectif de mon mandat était de mettre en place une gouvernance design pour les différentes plateformes de Croix Bleue Voyage. La mise en place, l'unification et le maintien du design system pour les trois plateformes faisaient partie de mes responsabilités, avec trois priorités concrètes :</p>
+            <ul>
+              <li>réduire la duplication de composantes à l'intérieur des différentes plateformes</li>
+              <li>réutiliser le plus possible les composantes fondatrices</li>
+              <li>réduire le coût de maintenance du système de design central et de ceux contextuels à chaque plateforme</li>
+            </ul>
+            <p>L'ensemble visait à améliorer l'efficacité de la conception des initiatives numériques au sein de l'organisation.</p>
+          </div>
+        </div>
+
+        <h2 class="content-heading">Mon rôle</h2>
+        <div class="content-container">
+          <div class="content-text">
+            <p>Mon rôle, en tant que consultant autonome pour cette partie du mandat, était d'effectuer un audit des processus et de l'environnement de travail du design au sein de l'entreprise. À partir de cet audit, j'ai proposé une architecture pour ces environnements et leurs workflows. L'objectif final était de livrer un design system adapté à leurs besoins et à leurs ressources, tout en respectant les meilleures pratiques de l'industrie.</p>
+          </div>
+        </div>
+
+        <h2 class="content-heading">Processus</h2>
+        <div class="content-container">
+          <h3 class="content-subheading">Architecture grossière</h3>
+          <div class="content-text">
+            <p>J'ai débuté par établir grossièrement l'architecture du nouvel environnement de travail, en créant les différents dossiers pour les trois plateformes gérées.</p>
+          </div>
+          <h3 class="content-subheading">Audit des composantes</h3>
+          <div class="content-text">
+            <p>J'ai ensuite fait un audit de tous les fichiers de travail existants pour identifier les dernières composantes livrées et les regrouper sous des composantes communes.</p>
+          </div>
+          <h3 class="content-subheading">Reconstruction des composantes communes</h3>
+          <div class="content-text">
+            <p>J'ai recréé les composantes communes aux différentes plateformes en construisant une librairie de design tokens selon les standards actuels de l'industrie, tout en uniformisant les composantes semblables pour minimiser les redondances et les divergences entre interfaces. J'ai commencé par les composantes communes pour obtenir un maximum d'impact en un minimum de temps, afin de mettre en place les standards qui allaient supporter le reste de la refonte technique des interfaces de la Croix Bleue.</p>
+          </div>
+          <div class="media media--landscape media--overflow">
+            <div class="media__track">
+              <div class="media__item">
+                <video
+                  class="media__video"
+                  src="assets/project%20-%20CB/buttons%20-%20CB.mov"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  aria-label="Composantes boutons du design system Croix Bleue"
+                ></video>
+              </div>
+              <div class="media__item">
+                <video
+                  class="media__video"
+                  src="assets/project%20-%20CB/variables%20-%20CB.mov"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  aria-label="Variables du design system Croix Bleue"
+                ></video>
+              </div>
+              <div class="media__item">
+                <video
+                  class="media__video"
+                  src="assets/project%20-%20CB/token%20naming%20-%20CB.mov"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  aria-label="Nommage des tokens du design system Croix Bleue"
+                ></video>
+              </div>
+            </div>
+            <div class="media__controls">
+              <div class="media__bar" aria-hidden="true">
+                <div class="media__progress"></div>
+              </div>
+              <button type="button" class="media__btn media__btn--prev" aria-label="Précédent">
+                <img src="assets/arrow-left.svg" alt="" width="24" height="24" />
+              </button>
+              <button type="button" class="media__btn media__btn--next" aria-label="Suivant">
+                <img src="assets/arrow-right.svg" alt="" width="24" height="24" />
+              </button>
+            </div>
+          </div>
+          <h3 class="content-subheading">Construction des composantes locales</h3>
+          <div class="content-text">
+            <p>Pour chaque plateforme, j'ai construit les composantes locales au fur et à mesure des projets d'amélioration ou de refonte, pour implémenter progressivement le design system à travers l'écosystème numérique de l'organisation.</p>
+          </div>
+          <h3 class="content-subheading">Le site web comme projet pilote</h3>
+          <div class="content-text">
+            <p>La refonte technique complète du site web a été l'un des projets majeurs de ce mandat : elle a permis de créer des composantes de contenu connectées directement au CMS Magnolia, facilitant la création et le maintien de l'information de pages. Ce projet a permis d'obtenir rapidement une version 1.0 complète du design system local pour le site web. Le Quoter et l'Espace Client, eux, sont en implémentation progressive.</p>
+          </div>
+        </div>
+
+        <h2 class="content-heading">Architecture du système</h2>
+        <div class="content-container">
+          <div class="content-text">
+            <p>L'architecture du nouvel environnement est composée de quatre fichiers de design system : trois indépendants et un principal. Chaque fichier indépendant correspond à une plateforme de l'entreprise (Site Web, Quoter et l'Espace Client) sans lien direct entre eux. Ils sont tous reliés au fichier Fondation, qui leur donne accès à toute la librairie de style et aux composantes communes (boutons, champs utilisateur, boîtes d'info, étiquettes, etc.).</p>
+            <p>En complément, des fichiers de travail accueillent tous les projets en cours : c'est là que les designers construisent leurs écrans et que les développeurs consultent les spécifications techniques. Chaque plateforme a son propre fichier de travail, connecté à la fois à son design system contextuel et au design system Fondation commun aux trois.</p>
+          </div>
+        </div>
+
+        <div class="media media--landscape">
+          <div class="media__grid">
+            <div class="media__item">
+              <img
+                class="media__image"
+                src="assets/project%20-%20CB/architecture%20-%20CB.png"
+                alt="Architecture du design system Croix Bleue"
+                width="2226"
+                height="1560"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
+        <h2 class="content-heading">Défis / décisions notables</h2>
+        <div class="content-container">
+          <div class="content-text">
+            <p>Les défis les plus importants sont survenus au niveau des composantes d'en-tête de page et des différents layouts de contenu dans le corps des pages. Il fallait s'assurer que ces deux modules soient suffisamment flexibles pour couvrir tous les cas d'affichage actuels ainsi que les besoins futurs de l'équipe marketing, habituée à des pages entièrement personnalisées. J'ai dû créer plusieurs variantes de chacun de ces modules pour offrir une flexibilité satisfaisante sans sacrifier la cohérence du système.</p>
+          </div>
+        </div>
+
+        <div class="media media--landscape">
+          <div class="media__grid">
+            <div class="media__item">
+              <video
+                class="media__video"
+                src="assets/project%20-%20CB/content%20flexibility.mov"
+                autoplay
+                muted
+                loop
+                playsinline
+                aria-label="Flexibilité des modules de contenu du design system Croix Bleue"
+              ></video>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="content-heading">Résultats livrés</h2>
+        <div class="content-container">
+          <div class="content-text">
+            <ul>
+              <li>Une bibliothèque Figma simplifiée, propre et conforme aux standards actuels de l'industrie</li>
+              <li>Une architecture de bibliothèques de composantes interreliées, permettant une scalabilité indépendante pour chaque plateforme</li>
+              <li>Une bibliothèque locale pour chacune des trois plateformes (site web, Quoter, Espace Client)</li>
+              <li>Une bibliothèque de composantes mère qui nourrit et maintient ces bibliothèques locales lors de changements globaux du langage visuel</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="media media--landscape">
+          <div class="media__grid">
+            <div class="media__item">
+              <video
+                class="media__video"
+                src="assets/project%20-%20CB/CB%20-%20typography.mov"
+                autoplay
+                muted
+                loop
+                playsinline
+                aria-label="Typographie du design system Croix Bleue"
+              ></video>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="content-heading">Impact</h2>
+        <div class="content-container">
+          <div class="content-text">
+            <p>L'instauration de ce design system a permis de livrer des initiatives qui, autrement, auraient pris beaucoup plus de temps, compte tenu de la complexité de l'écosystème et de l'absence de normes visuelles claires.</p>
+            <p><strong>Résultat marquant : le site web a été entièrement refait en moins de deux mois</strong>, en temps partiel et en parallèle d'autres mandats. Auparavant monté de façon personnalisée pour chacune de ses pages, le site repose maintenant sur une structure en modules de contenu, ce qui permet aux équipes marketing de monter de nouvelles pages rapidement à l'aide de la librairie visuelle créée dans le cadre de ce projet.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="footer">
+        <p class="footer__copyright">© <span data-year></span> Mathieu Parent Design</p>
+        <div class="footer__socials">
+          <a class="footer__social" href="#" aria-label="Instagram">
+            <img src="assets/instagram.svg" alt="" width="32" height="32" />
+          </a>
+          <a class="footer__social" href="#" aria-label="LinkedIn">
+            <img src="assets/linkedin.svg" alt="" width="32" height="32" />
+          </a>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+  <script src="nav.js"></script>
+  <script src="slider.js"></script>
+  <script src="lightbox.js"></script>
+  <script>
+    document.querySelectorAll('[data-year]').forEach((el) => {
+      el.textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

@@ -80,8 +80,10 @@
     const onPointerDown = (event) => {
       if (event.pointerType === 'touch') return;
       if (event.button !== undefined && event.button !== 0) return;
+      if (event.target.closest('.media__open')) return;
 
       cancelInertia();
+      delete track.dataset.dragged;
       isDragging = true;
       moved = false;
       startX = event.clientX;
@@ -120,6 +122,10 @@
         track.releasePointerCapture?.(event.pointerId);
       } catch (_) {}
 
+      if (moved) {
+        track.dataset.dragged = 'true';
+      }
+
       // px / ms → px / frame (~16ms)
       velocity *= 16;
 
@@ -128,6 +134,8 @@
       } else {
         velocity = 0;
       }
+
+      moved = false;
     };
 
     track.addEventListener('pointerdown', onPointerDown);
@@ -135,12 +143,6 @@
     track.addEventListener('pointerup', onPointerUp);
     track.addEventListener('pointercancel', onPointerUp);
     track.addEventListener('dragstart', (event) => event.preventDefault());
-    track.addEventListener('click', (event) => {
-      if (moved) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-    }, true);
 
     prev?.addEventListener('click', () => scrollByPage(-1));
     next?.addEventListener('click', () => scrollByPage(1));
